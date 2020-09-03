@@ -11,7 +11,8 @@ public class EnterPage extends BaseScript{
 	
 	@FindBy(xpath="//td/a/div[text()='Tasks']") WebElement TaskMenuLInk;
 	
-	public EnterPage() {
+	public EnterPage()
+	{
 		PageFactory.initElements(driver, this);
 	}
 
@@ -24,8 +25,6 @@ public class EnterPage extends BaseScript{
 	public void clickTaskMenu() 
 	{
 		 TaskMenuLInk.click();
-		
-		
 	}
 
 }
